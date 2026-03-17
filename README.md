@@ -152,7 +152,7 @@ Edit `phone.py` and set the destination number:
 
 ```python
 if __name__ == "__main__":
-    make_the_call("+918921898022")  # replace with your target number
+    make_the_call("+91XXXXXXXXXX")  # replace with your target number
 ```
 
 Then run it:
