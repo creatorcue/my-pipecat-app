@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+python-multipart
+pipecat-ai
+openai
+httpx
+requests
+python-dotenv
+torch
+torchaudio
