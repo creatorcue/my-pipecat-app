@@ -1,10 +1,10 @@
-# 🤖 Vobiz + Pipecat AI Voice Assistant
+#  Vobiz + Pipecat AI Voice Assistant
 
 A real-time AI voice assistant that integrates **Vobiz telephony** with **Pipecat's full STT → LLM → TTS pipeline**. When an outbound call is answered, the caller is connected to an AI assistant powered by OpenAI Whisper (speech-to-text), GPT-4o (language model), and OpenAI TTS (text-to-speech).
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 phone.py ──► Vobiz API ──► Calls destination phone
@@ -33,7 +33,7 @@ phone.py ──► Vobiz API ──► Calls destination phone
 
 ---
 
-## 📋 Prerequisites
+##  Prerequisites
 
 - Python 3.11+
 - [zrok](https://zrok.io) account and CLI installed
@@ -42,7 +42,7 @@ phone.py ──► Vobiz API ──► Calls destination phone
 
 ---
 
-## ⚙️ Environment Variables
+##  Environment Variables
 
 Create a `.env` file in the root of the project:
 
@@ -52,23 +52,17 @@ Create a `.env` file in the root of the project:
 OPENAI_API_KEY=sk-...
 
 # ─── Vobiz ────────────────────────────────────────────────
-# Found in your Vobiz console under Account Settings
+
 VOBIZ_AUTH_ID=MA_XXXXXXXX
-
-# Found in your Vobiz console under Account Settings
 VOBIZ_AUTH_TOKEN=your_auth_token_here
-
-# Your Vobiz DID number in E.164 format (the "from" number for outbound calls)
-# Found in your Vobiz console under Phone Numbers
 VOBIZ_DID=91XXXXXXXXXX
 
 # ─── Tunnel ───────────────────────────────────────────────
-# Your public zrok tunnel URL (no trailing slash, no /ws suffix)
 # Update this every time you restart zrok — the URL changes each time
 PUBLIC_URL=https://XXXXXXXXXXXXXX.share.zrok.io
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 my-pipecat-app/
@@ -83,7 +77,7 @@ my-pipecat-app/
 
 ---
 
-## 📦 Requirements
+##  Requirements
 
 Install them:
 ```bash
